@@ -9,7 +9,7 @@ const totalPopulation = population.reduce((acc, currentPopulation) => {
   return acc + number;
 }, 0);
 
-const averagePopulation = totalPopulation / population.length;
+const averagePopulation = totalPopulation / population.length || 0;
 
 document.querySelector('.total-population').textContent =
   totalPopulation.toLocaleString('en-US');
